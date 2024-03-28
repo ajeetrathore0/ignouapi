@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 1</title>
+<meta name="google-site-verification" content="dBjqbbdlvJB9tAsV_rAKnuCUNLP1hKhMfsBbGQvt6L0" />
+</head>
+<style>
+    img{
+        width: 200%;
+    }
+    body,html{
+
+        display: flex;
+        justify-content: center;
+        overflow-x:hidden;
+        flex-direction: column;
+    }
+    input{
+        outline: none;
+        border: 1px solid rgba(0, 0, 0, 0.432);
+        border-radius: 5px;
+        padding: 2px;
+        background-color: rgba(230, 222, 222, 0.822),bisque;
+
+    }
+    .navbar{
+        display: flex;
+        flex-direction: column;
+        width: 94vw;
+        padding: 0px 10px;
+        
+    }
+    *{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        margin: 4px;
+    }
+    ul{
+        display: flex;
+        gap: 10px;
+        list-style: none;
+        font-family: monospace !important;
+        font-size: 16px;
+        text-transform: capitalize;
+    }
+    .navmenu{
+        display: flex;
+        justify-content: space-between;
+    }
+    span{
+        font-size: 30px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+    li{
+        
+        opacity: .5;
+    }
+    li:hover{
+        opacity:1;
+        cursor: pointer;
+    }
+    .toparea{
+        width: 100vw;
+        display: flex;
+        justify-content: space-evenly;
+        background: url('room\ roof.jfif');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        padding-top: 100px;
+    }
+    .topdiv{
+        width: 45vw;
+        backdrop-filter: blur(6px);
+   
+        display: flex;
+        flex-direction: column;
+
+    }
+    .topdiv img{
+        width: 100%;
+        border-radius: 10px;
+    }
+    section.second{
+        display: flex;
+        padding-top: 50px;
+        background:rgba(0, 0, 0, 0.158);
+    }
+   
+    div.second{
+        width: 100vw;
+        display: flex;
+        
+    }
+    .second img{
+        width: 50vw;
+    }
+    .cubes{
+        /*display: grid;
+        grid-template-columns: repeat(4,23vw);
+        gap: 10px;*/
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 40px;
+    }
+    .cubes .topdiv{
+        width: 300px;
+    }
+    .cub{
+        display: flex;
+        justify-content: center;
+    }
+    .cub .topdiv{
+        width: 250px;
+    }
+    footer{
+        background: linear-gradient(black,rgb(34, 27, 27));
+        display: flex;
+        flex-direction: column;
+    }
+    footer ul{
+        display: flex;
+        flex-direction: column;
+        color: wheat;
+        font-size: 10px;
+        gap:0;
+    }
+
+    @media (max-width:400px) {
+        ul{
+            margin:0;
+            gap:0px;
+            
+        }
+        .navmenu span{
+            position:absolute;
+            right: 3px;
+            top:0;
+            height: 40px;
+        }
+    }
+    
+</style>
+<body>
+    <nav class="navbar">
+        <div class="search">
+            <input type="search" placeholder="search">
+        </div>
+        <div class="navmenu">
+            
+            <ul>
+                <li>home </li>
+                <li>company</li>
+                <li>products</li>
+                <li>catalogues</li>
+                <li>contacts</li>
+            </ul>
+            <span style="border: 1px solid blue;border-radius:20px;padding:5px;">norisys</span>
+        </div>
+    </nav>
+
+    <section class="toparea">
+        <div class="topdiv">
+            <img src="cube.jpg" alt="">
+            <h3>CUBE Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div>
+        <div class="topdiv">
+            <img src="1.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div>
+    </section>
+
+    <section class="second">
+        <div class="second">
+            <img src="2.jfif" alt="">
+            <div>
+                <p style="opacity: .4;">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without</p>
+                <a href="#">more</a>
+            </div>
+        </div>
+    </section>
+
+    <h3 style="padding:20px">Cube Series fetures</h3>
+
+    <section class="cubes">
+        <div class="topdiv">
+            <img src="3.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="4.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="5.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="8.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div>
+    </section>
+    <img src="7.jfif" alt="" style="width:100vw;border-radius:20px">
+
+    <section class="cub" >
+        <div class="topdiv">
+            <img src="3.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="4.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="5.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div><div class="topdiv">
+            <img src="8.jfif" alt="" style="mix-blend-mode: screen;">
+            <h3>squire Series</h3>
+            <p style="opacity: .6;">modern switches sockts and cessories for residential and commercial buildins</p>
+            <p style="opacity: .4;font-size:12px">these products are designed to withstand very high temperatures and arduous condtition the constacts are aperated over long time. Brass is used to make the contacts solid. rigd with very good electricals properties. It is the and fundamental electrical technology material transfer applicatiofor ensuring a smooth and trouble free socket operation without </p>
+            <a href="#">more...</a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="foot" style="display: flex;justify-content:center">
+            <ul class="links">
+                <h2>company</h2>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+                <li>link5</li>
+                <li>link6</li>
+                <li>link7</li>
+            </ul>
+            <ul class="links">
+                <h2>company</h2>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+                <li>link5</li>
+                <li>link6</li>
+                <li>link7</li>
+            </ul>
+            <ul class="links">
+                <h2>company</h2>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+                <li>link5</li>
+                <li>link6</li>
+                <li>link7</li>
+            </ul>
+            <ul class="links">
+                <h2>company</h2>
+                <li>link1</li>
+                <li>link2</li>
+                <li>link3</li>
+                <li>link4</li>
+                <li>link5</li>
+                <li>link6</li>
+                <li>link7</li>
+            </ul>
+        </div>
+
+        <div class="follow" style="display: flex;">
+            <p style="width: 300px;padding:10px;color:bisque;font-size:11px">
+Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem assumenda velit eveniet dolores magni tempore molestiae ullam? Placeat, laborum libero? Deleniti debitis ex neque magnam ab, tempora assumenda, hic deserunt delectus in est fugit numquam tempore alias, ea praesentium. Harum libero quisquam laudantium? Explicabo perspiciatis voluptas suscipit incidunt ullam earum?
+            </p>
+            <label for="sub"><input type="text" style="padding:5px;border-radius:15px;border:1px solid white"><input type="submit" value="subscribe" name="" id=""></label>
+        </div>
+    </footer>
+</body>
+</html>
