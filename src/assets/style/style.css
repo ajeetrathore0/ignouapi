@@ -946,41 +946,42 @@ section#more .menulist ul {
     .numbers span p:nth-child(4) {
         width: 150px;
     }
-#assignmentstatus{
-    
 
-    .numbers {
-        display: flex;
+    #assignmentstatus {
 
-        flex-direction: column;
+
+        .numbers {
+            display: flex;
+
+            flex-direction: column;
+
+        }
+
+        .numbers span p {
+            /* width: 32%; */
+            border-left: 1px solid #353030;
+            border-right: 1px solid #353030;
+            padding: 5px 10px;
+
+        }
+
+        .numbers span p:nth-child(1) {
+            width: 100px;
+        }
+
+        .numbers span p:nth-child(2) {
+            width: 222px;
+        }
+
+        .numbers span p:nth-child(3) {
+            width: 115px;
+        }
+
+        .numbers span p:nth-child(4) {
+            width: 160px;
+        }
 
     }
-
-    .numbers span p {
-        /* width: 32%; */
-        border-left: 1px solid #353030;
-        border-right: 1px solid #353030;
-        padding: 5px 10px;
-
-    }
-
-    .numbers span p:nth-child(1) {
-        width: 100px;
-    }
-
-    .numbers span p:nth-child(2) {
-        width: 222px;
-    }
-
-    .numbers span p:nth-child(3) {
-        width: 115px;
-    }
-
-    .numbers span p:nth-child(4) {
-        width: 160px;
-    }
-
-}
 
     .title {
         width: 120px;
@@ -1082,65 +1083,78 @@ section#more .menulist ul {
     margin: 10px;
 }
 
-.percentcalc{
+.percentcalc {
     display: flex;
     justify-content: center;
-    color:#ffffff;
+    color: #ffffff;
     gap: 20px;
-    .select{
+
+    .select {
         display: flex;
         flex-direction: column;
         margin: 10px 5px;
         justify-content: space-evenly;
         gap: 10px 20px;
     }
-    select,option{
-        padding: 3px ;
+
+    select,
+    option {
+        padding: 3px;
         background: transparent;
         color: rgb(54, 51, 51);
     }
-    
+
 }
 
-#assignmentimg img{
+#assignmentimg img {
     animation: imageLoad 1.8s linear infinite;
-    background-image: linear-gradient(to right, #eee 0%, #413f3f  50%, #eee 100%);
+    background-image: linear-gradient(to right, #eee 0%, #413f3f 50%, #eee 100%);
     min-width: 200px;
     min-height: 300px;
 }
-#assignmentimg .book{
+
+#assignmentimg .book {
     display: flex;
     flex-direction: row;
     width: fit-content;
 }
-#assignmentimg{
-    
-    h3{
-    width: max-content;
-    font-size: 27px;
-}h4{
-    width: max-content;
-    opacity: .7;
-}h4 i{
-    color: #78ddbb;
-}}
+
+#assignmentimg {
+
+    h3 {
+        width: max-content;
+        font-size: 27px;
+    }
+
+    h4 {
+        width: max-content;
+        opacity: .7;
+    }
+
+    h4 i {
+        color: #78ddbb;
+    }
+}
 
 
-.pyp{
+.pyp {
     display: flex;
     align-items: center;
     flex-direction: column;
     color: #f5f5f5;
     gap: 10px;
-    h3{
+
+    h3 {
         text-transform: uppercase;
     }
-    div{
+
+    div {
         display: flex;
         justify-content: center;
         gap: 10px;
     }
-    select{
+
+    select {
         outline: none;
         border: 1px solid rgb(32, 32, 32);
         border-radius: 5px;
@@ -1150,24 +1164,29 @@ section#more .menulist ul {
         font-size: 18px;
         width: 100%;
         text-transform: capitalize;
-        &::-webkit-scrollbar-track{
+
+        &::-webkit-scrollbar-track {
             width: 2px;
             background: transparent;
         }
-        &::-webkit-scrollbar-thumb{
+
+        &::-webkit-scrollbar-thumb {
             width: 4px;
         }
     }
 
-    .selectdetails{
+    .selectdetails {
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .year ,#month{
+
+    .year,
+    #month {
         width: 55%;
     }
-    .pypbutton{
+
+    .pypbutton {
         outline: none;
         font-size: 15px;
         background: #3d3e3f71;
@@ -1182,12 +1201,15 @@ section#more .menulist ul {
 }
 
 
-@keyframes imageLoad{
+@keyframes imageLoad {
     0% {
-        background-position: -200px 0; /* Initial background position */
-      }
-      100% {
-        background-position: calc(100% + 200px) 0; /* Final background position */
-      }
+        background-position: -200px 0;
+        /* Initial background position */
+    }
+
+    100% {
+        background-position: calc(100% + 200px) 0;
+        /* Final background position */
+    }
 
 }
